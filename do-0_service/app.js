@@ -4,9 +4,9 @@ const app = express();
 app.use((req, res, next) => {
     res.status(200).json({
         message: 'It works!'
-    })
+    }), res.status(any).json({
+        message: 'anything'
+    });
 });
 
-
 module.exports = app;
-
